@@ -24,13 +24,13 @@
   <body class="page">
 
     <!-- HEADER -->
-    <header class="header">
+    <header class="header inline-size-flexible">
       <h1 class="header__title">&lt;/html&gt;</h1>
       <p class="header__subtitle">закрывающий тег</p>
     </header>
 
     <!-- MAIN -->
-    <main class="main">
+    <main class="main inline-size-flexible">
 <!-- 1 -->
       <article class="card">
         <h2 class="card__title">Фритрек и нулевой спринт: Подготовка к работе</h2>
@@ -43,9 +43,27 @@
           <p class="card__text">Место для ваших воспоминаний о начале обучения.</p>
         </div>
         <div class="card__action-buttons-box">
-          <button class="button card__like-button"><span class="button__text">Like</span></button>
+
+          <button class="card__icon-button">
+            <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 24">
+              <path fill="#000" d="M6 0H3v3h3V0ZM9 0H6v3h3V0ZM3 3H0v3h3V3ZM3 6H0v3h3V6ZM3 9H0v3h3V9ZM12 0H9v3h3V0ZM6 12H3v3h3v-3ZM9 15H6v3h3v-3ZM12 18H9v3h3v-3ZM21 0h3v3h-3V0ZM18 0h3v3h-3V0ZM24 3h3v3h-3V3ZM24 6h3v3h-3V6ZM24 9h3v3h-3V9ZM15 0h3v3h-3V0ZM21 12h3v3h-3v-3ZM18 15h3v3h-3v-3ZM15 18h3v3h-3v-3ZM15 3h-3v3h3V3ZM15 21h-3v3h3v-3Z"/>
+              </svg>
+          </button>
+
+          <button class="button card__like-button">
+            <span class="button__text">Like</span>
+          </button>
+
         </div>
       </article>
+
+
+
+
+
+
+
+
 <!-- 2 -->
       <article class="card">
         <h2 class="card__title">1 спринт: Я — чистый лист</h2>
@@ -66,7 +84,7 @@
         <h2 class="card__title">1 спринт: А если не получится?</h2>
         <div class="card__image-box">
           <img class="card__image" src="./images/332050958dd6ce50ede5ed5c14544bb2.jpg" alt="">
-          <p class="card__label">&lt;CSS&gt;</p>
+          <p class="card__label">&lt;/CSS&gt;</p>
         </div>
         <div class="card__description">
           <p class="card__text">Первый проект — позади! Но это всё ещё самое начало пути. Радость могла быстро померкнуть и смениться ожиданием провала. Или вы, наоборот, могли вдохновиться успехами и поверить в себя.</p>
@@ -81,7 +99,7 @@
         <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
         <div class="card__image-box">
           <img class="card__image" src="./images/37e710dade42f55d28cc97215d313b21.jpg" alt="">
-          <p class="card__label">&lt;desigions&gt;</p>
+          <p class="card__label">&lt;/desigions&gt;</p>
         </div>
         <div class="card__description">
           <p class="card__text">На этом этапе вы уже достаточно разбирались в основах вёрстки, чтобы понять, как много ещё впереди. Вы могли попытаться погнаться за идеалом и понять, что он недостижим. А, может, вы вовсе и не подвержены перфекционизму и вместо того, чтобы сделать идеально, старались просто сделать.</p>
@@ -96,7 +114,7 @@
         <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
         <div class="card__image-box">
           <img class="card__image" src="./images/6548595609.jpg" alt="">
-          <p class="card__label">care</p>
+          <p class="card__label">&lt;/care&gt;</p>
         </div>
         <div class="card__description">
           <p class="card__text">Всё это время вы были не одиноки (хотя, возможно, иногда и чувствовали, что одни против целого мира). Вас окружали одногруппники, команда сопровождения и просто близкие люди, которым можно пожаловаться, если очередной макет просто так не поддавался. Осваивать что-то новое легче, когда рядом есть единомышленники, не правда ли?</p>
@@ -110,8 +128,8 @@
       <article class="card">
         <h2 class="card__title">3 спринт: Обходные стратегии</h2>
         <div class="card__image-box">
-          <img class="card__image" src="./images/122121.png" alt="">
-          <p class="card__label">&lt;support&gt;</p>
+          <img class="card__image" src="./images/cat-fail.gif" alt="">
+          <p class="card__label">&lt;/support&gt;</p>
         </div>
         <div class="card__description">
           <p class="card__text">На этом курсе вы постоянно решали разные задачи. В какой-то момент вам могло показаться, что решения просто иссякли. Значит, пришло время посмотреть на задачу под другим углом.</p>
@@ -126,7 +144,7 @@
         <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
         <div class="card__image-box">
           <img class="card__image" src="./images/DTC1JFJWAAIKQrL.jpg" alt="">
-          <p class="card__label">&lt;lifes-style: none;&gt;</p>
+          <p class="card__label">&lt;/lifes-style: none;&gt;</p>
         </div>
         <div class="card__description">
           <p class="card__text">Во время учёбы часто возникает чувство, когда не знаешь, за что хвататься. Вроде и проектную пора сдавать, и задачи хочется порешать, и в теории получше разобраться, и жизнь не забыть пожить. В такие моменты очень нужна концентрация. Вспомните, откуда вы её черпали.</p>
@@ -141,7 +159,7 @@
         <h2 class="card__title">«Сейчас я здесь»</h2>
         <div class="card__image-box">
           <img class="card__image" src="./images/1680501240_kartinki-pibig-info-p-kartinki-s-dnem-rozhdeniya-muzhchine-progr-76.png" alt="">
-          <p class="card__label">&lt;experiens&gt;</p>
+          <p class="card__label">&lt;/experiens&gt;</p>
         </div>
         <div class="card__description">
           <p class="card__text">Сейчас вы уже очень много знаете о вёрстке. Но это только начало. Во-первых, впереди ещё много материала про «красотищу». Во-вторых, с окончанием курса учёба не заканчивается. Вёрстка — это целый мир. И этот мир постоянно меняется. Познать его полностью не получится, но это тот случай, когда важен сам процесс познания. Ведь часто путь — и есть результат.</p>
@@ -152,9 +170,32 @@
         </div>
       </article>
 
-      <button class="button button_dialog">
-        <svg class="button_dialog-icon" src="./svg/floppy.svg"></svg>
-        Сохранить на память</button>
+
+
+
+        <button class="button button_dialog" type="button" onclick="window['dialog'].showModal()">
+          <svg class="button_dialog-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 21 21">
+            <use href="./svg/floppy.svg#floppy"></use>
+          </svg>
+          <span class="button__text">Сохранить на память</span>
+        </button>
+
+        
+        <dialog id="dialog" class="modal">
+          <div class="modal__content">
+            <svg class="button_dialog-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 21 21">
+              <use href="./svg/floppy.svg#floppy"></use>
+            </svg>
+            <p class="modal__text">Вставьте дискету, чтобы продолжить</p>
+          </div>
+          <button class="button" type="button" onclick="window['dialog'].close()">Ok</button>
+        </dialog>
+
+
+      
+
+
+
     </main>
 
 
