@@ -8,9 +8,11 @@
 
     --inline-size-flexible: clamp(23.438rem, 30.516vw + 16.285rem, 43.75rem);
 
-    --color-background: #fff;
-    --color-dark: rgba(0, 0, 0, 0.5);
-    --color-light: rgba(255, 255, 255, 0.5);
+    --color-main-light: #fff;
+    --color-main-dark: #000;
+    --color-label-light: rgba(255, 255, 255, 0.5);
+    --color-label-dark: rgba(0, 0, 0, 0.5);
+    --color-heart-icon-accent: #ff0000;
 
     --background-image: repeating-linear-gradient(
         to right,
