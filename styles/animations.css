@@ -15,6 +15,7 @@
         transform: scale(1);
         transform-origin: center;
     }
+
     to {
         transform: scale(1.25);
         transform-origin: center;
@@ -25,6 +26,7 @@
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -125,8 +127,10 @@
 .card__icon-button:has(.like-icon.is-liked):hover path {
     fill: var(--color-heart-icon-accent);
 }
+
 /* я понимаю что плохо обращаться к селектору тега path, 
-но решил сделать так для того чтобы вышло меньше кода(альтернативное решение привожу ниже),
+но решил сделать так для того чтобы вышло меньше кода
+(альтернативное решение привожу ниже),
 вряд ли внутри этой иконки могут появиться другие path-ы,
 но если это всё равно остается нежелательным прошу мне об этом написать в ревью,
 спасибо, хорошего вам дня и настроения :)
@@ -137,3 +141,21 @@
 .card__icon-button:has(.like-icon.is-liked):hover .contour {
     fill: var(--color-heart-icon-accent);
 } */
+
+@media (prefers-reduced-motion: reduce) {
+    .like-icon.is-liked .sparks,
+    .like-icon.is-liked .heart {
+        animation: none;
+    }
+
+    .core,
+    .card__icon-button:hover .like-icon .core,
+    .card__icon-button:active .like-icon .core,
+    .main-body,
+    .card__icon-button:hover .like-icon .main-body,
+    .card__icon-button:active .like-icon .main-body,
+    .contour,
+    .like-icon.is-liked .contour {
+        transition-duration: 1s;
+    }
+}

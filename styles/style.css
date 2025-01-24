@@ -243,7 +243,6 @@ or (-webkit-text-stroke: 1px var(--color-label-light, rgba(255, 255, 255, 0.5)))
 }
 
 .floppy-icon {
-  /* position: relative; */
   z-index: 1;
   mix-blend-mode: difference;
   block-size: 21px;
@@ -309,7 +308,6 @@ or (-webkit-text-stroke: 1px var(--color-label-light, rgba(255, 255, 255, 0.5)))
 }
 
 .modal[open] .floppy-icon {
-  /* fill: var(--color-main-dark, #000); */
   block-size: 39px;
   inline-size: 39px;
   mix-blend-mode: normal;
@@ -325,7 +323,6 @@ or (-webkit-text-stroke: 1px var(--color-label-light, rgba(255, 255, 255, 0.5)))
 }
 
 .modal[open] .button-dialog-close {
-  /* position: relative; */
   padding: 5px;
   text-transform: uppercase;
 }
@@ -384,3 +381,9 @@ or (-webkit-text-stroke: 1px var(--color-label-light, rgba(255, 255, 255, 0.5)))
   }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .button:not(.card__icon-button):hover::after,
+  .button::after {
+    transition-duration: 2s;
+  }
+}
