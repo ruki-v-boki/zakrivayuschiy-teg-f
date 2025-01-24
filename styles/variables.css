@@ -14,18 +14,18 @@
     --color-label-dark: rgba(0, 0, 0, 0.5);
     --color-heart-icon-accent: #ff0000;
 
-    --background-image: repeating-linear-gradient(
+    --background-gradient: repeating-linear-gradient(
         to right,
         #d3d3d3,
         #d3d3d3 2px,
-        transparent 2px,
-        transparent 4px),
+        rgba(211 211 211 / .0) 2px,
+        rgba(211 211 211 / .0) 4px),
         repeating-linear-gradient(
         to bottom,
         #d3d3d3,
         #d3d3d3 2px,
-        transparent 2px,
-        transparent 4px),
+        rgba(211 211 211 / .0) 2px,
+        rgba(211 211 211 / .0) 4px),
         linear-gradient(
         to bottom,
         #e7e7e7,
