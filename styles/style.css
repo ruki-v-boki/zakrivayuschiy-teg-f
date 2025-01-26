@@ -35,7 +35,7 @@
   gap: 20px;
   border: var(--border, 2px solid) var(--color-main-dark, #000);
   padding: clamp(7.5rem, 2.462vw + 6.923rem, 8rem) clamp(0.875rem, 32.615vw - 6.769rem, 7.5rem);
-  font-family: var(--font-family-accent), 'fantasy';
+  font-family: var(--font-family-accent), fantasy;
   text-transform: uppercase;
   background-color: var(--color-main-light, #fff);
 }
@@ -99,7 +99,7 @@
   top: 25px;
   right: 24px;
   color: var(--color-label-dark, rgba(0, 0, 0, 0.5));
-  font-family: var(--font-family-accent), 'fantasy';
+  font-family: var(--font-family-accent), fantasy;
   font-weight: var(--font-weight-normal, 400);
   font-size: 14px;
   text-shadow: 0 0 1px var(--color-label-light, rgba(255, 255, 255, 0.5));
@@ -149,7 +149,7 @@ or (-webkit-text-stroke: 1px var(--color-label-light, rgba(255, 255, 255, 0.5)))
   overflow: hidden;
   color: var(--color-main-light, #fff);
   background-color: transparent;
-  transition: transform 0.3s ease, box-shadow 0.5s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 }
 
@@ -168,7 +168,8 @@ or (-webkit-text-stroke: 1px var(--color-label-light, rgba(255, 255, 255, 0.5)))
   align-items: center;
   margin: 0;
   border: var(--border, 2px solid) transparent;
-  padding: 3px 0 0;
+  /* padding: 3px 0 0; */
+  padding: 0;
   transition: border 0.3s ease;
   max-block-size: 38px;
 }
@@ -195,7 +196,7 @@ or (-webkit-text-stroke: 1px var(--color-label-light, rgba(255, 255, 255, 0.5)))
   position: relative;
   z-index: 1;
   color: var(--color-main-light);
-  font-family: var(--font-family-accent), 'fantasy';
+  font-family: var(--font-family-accent), fantasy;
   font-weight: var(--font-weight-normal, 400);
   font-size: 14px;
   line-height: 90%;
@@ -303,7 +304,7 @@ or (-webkit-text-stroke: 1px var(--color-label-light, rgba(255, 255, 255, 0.5)))
 }
 
 .modal[open] .modal__text {
-  font-family: var(--font-family-accent), 'fantasy';
+  font-family: var(--font-family-accent), fantasy;
   font-weight: var(--font-weight-normal, 400);
   font-size: 14px;
   line-height: 150%;
