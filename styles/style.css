@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 100px;
+  /* row-gap: 100px; */
   margin: 0 auto;
   padding: 100px 0;
   font-family: var(--font-family-main), sans-serif;
@@ -38,6 +38,7 @@
   font-family: var(--font-family-accent), fantasy;
   text-transform: uppercase;
   background-color: var(--color-main-light, #fff);
+  margin-block-end: 100px;
 }
 
 .inline-size-flexible {
@@ -72,7 +73,7 @@
 }
 
 .card__title {
-  padding: 4px 10px;
+  padding: 6px 10px 4px 10px;
   font-family: var(--font-family-main), sans-serif;
   font-size: 18px;
   /* font-weight: var(--font-weight-bold, 700); */
@@ -138,7 +139,7 @@ or (-webkit-text-stroke: 1px var(--color-label-light, rgba(255, 255, 255, 0.5)))
 .card__action-buttons-box {
   display: flex;
   justify-content: flex-end;
-  gap: 4px;
+  gap: 5px;
 }
 
 
